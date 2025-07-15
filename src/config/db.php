@@ -2,9 +2,9 @@
 function getConnection() {
     $host = 'localhost';
     $port = '5432';
-    $dbname = 'productos_db';      // ← el nombre que usaste en `db.js`
+    $dbname = 'productos_db';      
     $user = 'postgres';
-    $password = 'contraseña';      // ← la misma contraseña que usaste en `db.js`
+    $password = 'contraseña';      
 
     $conn_string = "host=$host port=$port dbname=$dbname user=$user password=$password";
     $conn = pg_connect($conn_string);
